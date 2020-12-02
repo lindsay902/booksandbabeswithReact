@@ -20,13 +20,14 @@ class FeaturedBooks extends React.Component {
             <div>
                 <SectionDivider title="Featured Books" />
                 <div className="books-display-background">
-                    <div className="book-display">
-                        <div>
+                    <div>
+                        <div className="book-display">
                             {this.state.books.map(book => (
                                 <div className="book">
                                     <img
                                         src={book.imageSrc}
                                         alt={book.alt}
+                                        className="book-cover-image"
                                     />
                                     <h3>{book.title}</h3>
                                     <h3>by {book.author}</h3>

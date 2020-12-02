@@ -2,7 +2,6 @@ import React from 'react';
 
 export class SectionDivider extends React.Component {
     render() {
-        //let title = 'placeholder';
         return (
             <div className="sectionDivider">
                 <div className="line-break-section">
