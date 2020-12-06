@@ -62,15 +62,17 @@ p {
 
 .logo-image {
     display: block;
-    margin-left: auto;
+    margin-left: 38%;
     margin-right: auto;
-    width: 55%;
+    margin-top: -5%;
+    width: 38%;
 }
 
 .flex-container {
    display: flex;
    justify-content: space-between;
    padding-top: 25px;
+   background-color: #a6c8c8;
 }
 
 .menu-toggle {
@@ -102,13 +104,14 @@ p {
     background-size: 100%;
     margin-bottom: 20px;
     margin: 0;
-    padding-top: 20px
+    padding-top: 25px
 }
 
 .book-display {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -122,16 +125,14 @@ p {
     margin-left: 25%;
 }
 
-.sectionDivider .lineBreakSection .dividerTitle {
+.section-divider {
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.lineBreakSection {
-    margin: 5%;
-}
-
-.dividerTitle {
+.divider-title {
     border: solid;
     border-color: #a5a8af;
     padding-right: 1em;
@@ -142,7 +143,7 @@ p {
     font-weight: bolder;
 }
 
-.line-break-section b {
+.line-break-section {
     display: block;
     flex: 1;
     height: 2px;

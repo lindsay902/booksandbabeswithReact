@@ -1,26 +1,21 @@
 import React from 'react';
-import Header from './Header';
-import FeaturedBooks from './FeaturedBooks';
-import VoteForBooks from './VoteForBooks';
-import { Social } from './SocialComponent';
+import Home from './Home';
+import { Router } from '@reach/router';
+import AboutUs from './AboutUs';
 
 
-//ReactDOM.render(<App />, document...)
 class App extends React.Component {
 
     render() {
         return (
             <div>
-                <Header />,
-                <FeaturedBooks />,
-                <VoteForBooks />,
-                <Social />,
+                <Router>
+                    <Home path="/" />
+                    <AboutUs path="/aboutus" />
+                </Router>
             </div>
         );
     }
-
-
- 
 
 }
 
