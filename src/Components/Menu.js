@@ -13,11 +13,7 @@ const Menu = ({ open, ...props }) => {
         <span aria-hidden="true">💁🏻‍♂️</span>
         About us
       </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">💸</span>
-        Pricing
-        </a>
-      <a href="/" tabIndex={tabIndex}>
+      <a href="/contact" tabIndex={tabIndex}>
         <span aria-hidden="true">📩</span>
         Contact
         </a>
