@@ -8,7 +8,7 @@ const Menu = ({ open, ...props }) => {
   const tabIndex = isHidden ? 0 : -1;
 
   return (
-    <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
+    <StyledMenu class="hamburgermenu" open={open} aria-hidden={!isHidden} {...props}>
       <a href="/aboutus" tabIndex={tabIndex}>
         <span aria-hidden="true">💁🏻‍♂️</span>
         About us

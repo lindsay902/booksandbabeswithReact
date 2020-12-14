@@ -5,6 +5,7 @@ import { useOnClickOutside } from './hooks';
 import FocusLock from 'react-focus-lock';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './Theme';
+import { NavBar } from './NavBar';
 
 
 
@@ -32,6 +33,9 @@ function Header() {
                 </ThemeProvider>
                 <div className="logo">
                 <img class="logo-image" src="https://iili.io/dvbcR1.md.png" alt="Books & Babes"/>
+                </div>
+                <div>
+                    <NavBar />
                 </div>
                 <div className="account">
                     <p>ACCOUNT</p>
