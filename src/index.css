@@ -2,23 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 
-@media screen and (max-width: 44em) {
-    .menu {
+@media screen and (max-width: 45em) {
+    .hamburgerMenu {
         display: block
     }
     .navbar {
-        display: none
+        display: none;
+        margin: 0 0 3px 0;
     }
 }
 
 @media screen and (min-width: 44em) {
-    .menu {
-        display: none
+    .hamburgerMenu {
+        display: none;
+        justify-content: space-between;
     }
     .navbar {
-        display: block
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+
     }
 }
+
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 
 body {
   margin: 0;
@@ -34,13 +48,16 @@ code {
     monospace;
 }
 
-* {
-    box-sizing: border-box;
-}
+/*.background {
+    background-image: linear-gradient(180deg, rgb(243, 237, 237), white, white);
+}*/
 
-*, *:before, *:after {
-    box-sizing: inherit;
-  }
+.header {
+    margin-top: 1em;
+    border-bottom: 10px solid;
+    border-image-source: linear-gradient(90deg, rgb(252, 252, 252), rgb(138, 143, 143));
+    border-image-slice: 1;
+}
 
 .header-container {
     display: block;
@@ -55,6 +72,12 @@ code {
   font-style: italic;
   font-size: smaller;
 }  
+
+.account {
+    border: 2px solid #525252;
+    border-radius: 15px;
+    padding: 0.5em;
+}
 
 h1 {
     color: #525252;
@@ -86,11 +109,19 @@ p {
     width: 38%;
 }
 
-.flex-container {
+.logo {
+    width: 10em;
+    height: auto;
+}
+
+.fullpageNav {
+    display: flex;
+}
+
+.menu {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    padding-top: 25px;
-   background-color: #cdd8d8;
 }
 
 .menu-toggle {
@@ -130,6 +161,10 @@ p {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.book-cover-image {
+    background: white;
 }
 
 

@@ -8,8 +8,6 @@ import { theme } from './Theme';
 import { NavBar } from './NavBar';
 
 
-
-
 function Header() {
     const [open, setOpen] = useState(false);
     const node = useRef();
@@ -18,29 +16,34 @@ function Header() {
     useOnClickOutside(node, () => setOpen(false));
   
     return (
-        <div>
-            <div className='flex-container'>
+        <div className="header">
+            <div className="hamburgerMenu">
                 <ThemeProvider theme={theme}>
 
                 <div className="menu">
-                <div ref={node}>
-                    <FocusLock disabled={!open}>
-                    <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-                    <Menu open={open} setOpen={setOpen} id={menuId} />
-                    </FocusLock>
-                </div>
-                </div>
-                </ThemeProvider>
-                <div className="logo">
-                <img class="logo-image" src="https://iili.io/dvbcR1.md.png" alt="Books & Babes"/>
+                    <div ref={node}>
+                        <FocusLock disabled={!open}>
+                        <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+                        <Menu open={open} setOpen={setOpen} id={menuId} />
+                        </FocusLock>
+                    </div>
+                    <div>
+                    <img className="logo-image" src="https://iili.io/dvbcR1.md.png" alt="Books & Babes"/>
+                    </div>
+                    <div>
+                        <button onClick="localhost:3001/login">login/register</button>
+                    </div>
                 </div>
                 <div>
-                    <NavBar />
+
                 </div>
-                <div className="account">
-                    <p>ACCOUNT</p>
-                </div>
+                </ThemeProvider>
             </div> 
+            <div className="navbar">
+                <img className="logo" 
+                src="https://iili.io/dvbcR1.md.png" alt="Books & Babes"/>
+                <NavBar />
+            </div>
         </div>
     );
 }
